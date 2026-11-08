@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    background-color: #e8edf3;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body:has(main.Шевченківський){
+    background-image: url(/images/shev.jpg);
+}
+
+body:has(main.Дарницький){
+    background-image: url(/images/darn.jpg);
+}
+
+body:has(main.Деснянський){
+    background-image: url(/images/desn.jpg);
+}
+
+body:has(main.Голосіївський){
+    background-image: url(/images/golos.jpg);
+}
+
+body:has(main.Оболонський){
+    background-image: url(/images/obol.jpg);
+}
+
+body:has(main.Печерський){
+    background-image: url(/images/pech.jpg);
+}
+
+body:has(main.Подільський){
+    background-image: url(/images/podil.jpg);
+}
+
+body:has(main.Соломʼянський){
+    background-image: url(/images/solom.jpg);
+}
+
+body:has(main.Дніпровський){
+    background-image: url(/images/dnip.jpg);
+}
+
+body:has(main.Святошинський){
+    background-image: url(/images/sviat.jpg);
+}

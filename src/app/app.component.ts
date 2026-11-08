@@ -1,7 +1,9 @@
 import { Component, signal } from '@angular/core';
+import { Header } from './header/header.component';
+import { ApartmentComponent } from './apartment/apartment.component';
 
 @Component({
-  imports: [],
+  imports: [Header, ApartmentComponent],
   selector: 'app-root',
   styleUrl: './app.component.css',
   templateUrl: './app.component.html',

@@ -1,0 +1,10 @@
+header {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}

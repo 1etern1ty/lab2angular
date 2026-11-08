@@ -1,0 +1,40 @@
+<main [class]="district">
+    <!-- Метод викликається після відправки форми -->
+    <form (ngSubmit)="calculate()"> 
+        <label for="name">Назва квартири</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" required>
+
+        <label for="price">Вартість за 1м кв. (грн):</label>
+        <input type="number" id="price" name="price" [(ngModel)]="price" required min="0.01">
+
+        <label for="area">Площа квартири (м кв.)</label>
+        <input type="number" id="area" name="area" [(ngModel)]="area" required min="0.01">
+
+        <label for="district">Район Києва:</label>
+        <select name="district" id="district" [(ngModel)]="district" required>
+            <option value="" disabled>Оберіть район</option>
+            <option value="Шевченківський">Шевченківський</option>
+            <option value="Оболонський">Оболонський</option>
+            <option value="Подільський">Подільський</option>
+            <option value="Дарницький">Дарницький</option>
+            <option value="Святошинський">Святошинський</option>
+            <option value="Соломʼянський">Соломʼянський</option>
+            <option value="Голосіївський">Голосіївський</option>
+            <option value="Печерський">Печерський</option>
+            <option value="Дніпровський">Дніпровський</option>
+            <option value="Деснянський">Деснянський</option>
+        </select>
+
+        <button type="submit">Розрахувати вартість</button>
+    </form>
+
+    <!-- Повідомлення якщо є помилка -->
+    @if (error){
+        <p class="error">{{error}}</p>
+    }
+
+    @if (result !== null){
+        <h3>Тип: {{apartmentType}}</h3>
+        <h3>Вартість квартири: {{result.toFixed(2)}} грн</h3>
+    }
+</main>

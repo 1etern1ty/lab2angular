@@ -1,0 +1,30 @@
+main{
+    max-width: 700px;
+    min-height: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #e8edf3;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button{
+    padding: 10px;
+    font-size: 16px;
+}
+
+button{
+    background-color: #6687b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+}
