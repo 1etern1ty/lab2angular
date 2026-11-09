@@ -8,41 +8,70 @@ body{
 }
 
 body:has(main.Шевченківський){
-    background-image: url(/images/shev.jpg);
+    background-image: url(./assets/images/shev.jpg);
 }
 
 body:has(main.Дарницький){
-    background-image: url(/images/darn.jpg);
+    background-image: url(./assets/images/darn.jpg);
 }
 
 body:has(main.Деснянський){
-    background-image: url(/images/desn.jpg);
+    background-image: url(./assets/images/desn.jpg);
 }
 
 body:has(main.Голосіївський){
-    background-image: url(/images/golos.jpg);
+    background-image: url(./assets/images/golos.jpg);
 }
 
 body:has(main.Оболонський){
-    background-image: url(/images/obol.jpg);
+    background-image: url(./assets/images/obol.jpg);
 }
 
 body:has(main.Печерський){
-    background-image: url(/images/pech.jpg);
+    background-image: url(./assets/images/pech.jpg);
 }
 
 body:has(main.Подільський){
-    background-image: url(/images/podil.jpg);
+    background-image: url(./assets/images/podil.jpg);
 }
 
 body:has(main.Соломʼянський){
-    background-image: url(/images/solom.jpg);
+    background-image: url(./assets/images/solom.jpg);
 }
 
 body:has(main.Дніпровський){
-    background-image: url(/images/dnip.jpg);
+    background-image: url(./assets/images/dnip.jpg);
 }
 
 body:has(main.Святошинський){
-    background-image: url(/images/sviat.jpg);
+    background-image: url(./assets/images/sviat.jpg);
+}
+
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav a {
+    flex: 1;
+    padding: 18px 150px;
+    background-color: #6687b5;
+    color: rgb(31, 32, 37);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.main-nav a:hover {
+  background-color: #5274a3;
 }

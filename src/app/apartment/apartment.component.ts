@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Apartments } from '../classes/apartment';
 import { CentralApartments } from '../classes/central-apartment';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   selector: 'app-apartment',
   styleUrl: './apartment.component.css',
   templateUrl: './apartment.component.html',

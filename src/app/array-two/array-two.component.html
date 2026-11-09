@@ -1,0 +1,37 @@
+<header>
+    <h1>Лабораторна робота №3 Angular</h1>
+    <h2>Виконала студентка КН-31 Хомяк Дарʼя, 13 варіант</h2>
+    <h3>Двовимірні масиви</h3>
+</header>
+<nav class="main-nav">
+  <a routerLink="/" >Класи</a>
+  <a routerLink="/array-one">Одновимірний масив</a>
+  <a routerLink="/array-two">Двовимірний масив</a>
+</nav>
+<main class="array-container">
+    <h2>Завдання №2 Двовимірний масив</h2>
+    <p class="description">Дано цілочисельний масив В [1..5, 1..5]. Знайти кількість від‘ємних
+    елементів цього масиву, розташованих нижче лівої діагоналі.</p>
+  
+    <button type="button" (click)="generate()">Згенерувати матрицю</button>
+
+    @if (matrix.length > 0){
+        <div class="matrix">
+            @for (row of matrix; track $index){
+                <div class="matrix-row">
+                    @for (number of row; track $index){
+                        <span>{{ number }}</span>
+                    }
+                </div>
+            }
+        </div>
+
+        <button type="button" (click)="calculate()">Розрахувати</button>
+    }
+    @if (hasResult){
+        <div class="results">
+            <h3>Результат обчислення</h3>
+            <p>Кількість від'ємних елементів: {{ count }}</p>
+        </div>
+    }
+</main>
